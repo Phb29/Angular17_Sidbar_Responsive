@@ -1,1 +1,45 @@
-<p>header works!</p>
+<div class="header" [ngClass]="getHeadClass()">
+
+  <div class="head-content">
+    <div class="head-content-left">
+      <div class="search-container">
+        <div class="normal-search">
+          <input type="search" class="search" cname="" id="" placeholder="Procurar...">
+          <i class="far fa-search search-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="head-contente-rigth">
+      <div class="header-menu">
+        <div class="head-menu-item">
+          <button class="head-menu-item-btn riple">
+            <img [src]="'assets/flags/us.jpg'" alt="" class="flag" alt="flag">
+          </button>
+        </div>
+        <div class="head-menu-item">
+          <button class="head-menu-item-btn riple">
+            <i class="far fa-expanded menu-icon"></i>
+          </button>
+        </div>
+        <div class="head-menu-item">
+          <button class="head-menu-item-btn riple">
+            <i class="far fa-bell menu-icon"></i>
+          </button>
+        </div>
+        <div class="head-menu-item">
+          <button class="head-menu-item-btn riple">
+            <i class="far fa-comment-alt menu-icon"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="head-user-avatar-container">
+        <div class="head-user-avatar">
+          <img src="../../assets/user3.jpg" alt="" class="user-avatar">
+          <div class="div circle-indicator pulse"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
